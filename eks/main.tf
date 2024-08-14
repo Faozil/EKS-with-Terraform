@@ -5,7 +5,6 @@ locals {
 
 module "eks" {
   source = "../module"
-
   env                   = var.env
   cluster-name          = "${local.env}-${local.org}-${var.cluster-name}"
   cidr-block            = var.vpc-cidr-block
